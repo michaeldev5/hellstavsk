@@ -6,7 +6,7 @@ const Title = styled.h1`
   left: 30px;
   font: normal normal 800 80px/98px Gilroy;
   letter-spacing: 0px;
-  color: #262123;
+  color: white;
   z-index: 5;
   
   &:before {

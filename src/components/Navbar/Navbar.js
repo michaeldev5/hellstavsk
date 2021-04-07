@@ -3,6 +3,13 @@ import styled from "styled-components";
 import {Link} from "gatsby";
 import logoSrc from './logo.png';
 
+const OuterWrapper = styled.div`
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+`;
+
 const Wrapper = styled.div`
   height: 152px;
   max-width: 1600px;
@@ -12,8 +19,6 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   background: #262123;
-  position: sticky;
-  top: 0;
   z-index: 1000;
   padding: 0 21px;
 `
@@ -66,24 +71,26 @@ const Button = styled.a`
 
 const Navbar = () => {
     return (
-      <Wrapper>
+      <OuterWrapper>
+        <Wrapper>
           <LogoWrapper>
-              <Logo src={logoSrc}/>
+            <Logo src={logoSrc}/>
           </LogoWrapper>
           <LinkWrapper to="#">
-              <StyledLink >O nás</StyledLink>
+            <StyledLink >O nás</StyledLink>
           </LinkWrapper>
           <LinkWrapper to="#">
-              <StyledLink>Projekty</StyledLink>
+            <StyledLink>Projekty</StyledLink>
           </LinkWrapper>
           <LinkWrapper to="#">
-              <StyledLink to="#">Služby</StyledLink>
+            <StyledLink to="#">Služby</StyledLink>
           </LinkWrapper>
           <LinkWrapper to="#">
-              <StyledLink to="#">Kontakt</StyledLink>
+            <StyledLink to="#">Kontakt</StyledLink>
           </LinkWrapper>
-        <Button href="#">ozvite sa nám</Button>
-      </Wrapper>
+          <Button href="#">ozvite sa nám</Button>
+        </Wrapper>
+      </OuterWrapper>
     )
 }
 

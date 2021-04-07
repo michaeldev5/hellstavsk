@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Title2 from './Title2';
 
 const Wrapper = styled.div`
+  transform: translateY(-50%);
   padding-top: 53px;
   padding-bottom: 41px;
   padding-right: 109px;

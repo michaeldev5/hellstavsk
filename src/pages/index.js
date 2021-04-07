@@ -50,9 +50,7 @@ export default function Home() {
         <GlobalStyles/>
         <Navbar/>
         <Content>
-            <Section>
-                <Hero/>
-            </Section>
+              <Hero/>
             <Section>
               <TextSection/>
             </Section>
