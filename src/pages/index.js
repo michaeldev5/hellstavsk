@@ -7,6 +7,8 @@ import TextSection from "../components/TextSection";
 import FeaturesGrid from "../components/FeaturesGrid";
 import ProjectsSection from "../components/ProjectsSection";
 import Section from '../components/Section';
+import Footer from '../components/CustomFooter';
+import MapSection from "../components/MapSection";
 
 const Content = styled.div`
   
@@ -60,6 +62,8 @@ export default function Home() {
             <Section>
               <ProjectsSection/>
             </Section>
+            <MapSection/>
+            <Footer />
         </Content>
       </>
   )

@@ -27,38 +27,36 @@ const Description = styled.p`
   color: white;
 `
 
-const Hero = () => {
-    return (
-        <StaticQuery
-            query={graphql`
-                query HeroQuery {
-                  background: file(relativePath: { eq: "bg.png" }) {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
+const Hero = () => (
+    <StaticQuery
+        query={graphql`
+            query HeroQuery {
+              background: file(relativePath: { eq: "bg.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
                   }
-               }
-            `}
-            render={data => (
-              <BackgroundImage fluid={data.background.childImageSharp.fluid} style={{width: '100%'}}>
-                <Section>
-                  <Container>
-                      <Wrapper>
-                          <Title1 beforeText="MODERNÉ">
-                              KREATÍVNE RIEŠENIA
-                          </Title1>
-                          <Description>
-                              Ponúkame kvalitné murárske práce a stavebnú činnosť so zodpovedným prístupom.
-                          </Description>
-                      </Wrapper>
-                  </Container>
-                </Section>
-              </BackgroundImage>
-            )}
-        />
-    )
-}
+                }
+              }
+           }
+        `}
+        render={data => (
+          <BackgroundImage fluid={data.background.childImageSharp.fluid} style={{width: '100%'}}>
+            <Section>
+              <Container>
+                  <Wrapper>
+                      <Title1 beforeText="MODERNÉ">
+                          KREATÍVNE RIEŠENIA
+                      </Title1>
+                      <Description>
+                          Ponúkame kvalitné murárske práce a stavebnú činnosť so zodpovedným prístupom.
+                      </Description>
+                  </Wrapper>
+              </Container>
+            </Section>
+          </BackgroundImage>
+        )}
+    />
+);
 
 export default Hero;
