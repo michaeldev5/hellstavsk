@@ -1,6 +1,11 @@
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    --clr-bg-1: #262123;
+    --clr-1: #262123;
+    --clr-2: #f6871f;
     --clr-text-1: white;
 }
 
@@ -33,26 +38,113 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* --- Navbar --- */
+
+.nav {
+    height: 74px;
+    width: 100%;
+    background-color: var(--clr-1);
+    position: relative;
+    z-index: 999;
+}
+
+.nav-header {
+    display: inline;
+}
+
+.nav-title {
+    width: 130px;
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+    margin-left: 10px;
+}
+
+.nav-title svg {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-links {
+    display: inline;
+    height: 74px;
+    align-items: center;
+    float: right;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.nav-links > a {
+    height: 74px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #efefef;
+
+}
+
+.nav-links > a:hover {
+    background-color: #4E5050;
+    color: var(--clr-2);
+}
+
+.nav-links > a:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-2);
+}
+
+
+
+
+.nav > #nav-check {
+    display: none;
+}
+
+/* --- Footer --- */
+
 footer {
-    background: var(--clr-bg-1);
+    background: var(--clr-1);
     color: var(--clr-text-1);
     display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
     gap: 2em;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 footer > * {
     text-align: center;
 }
 
+.address {
+    grid-column: span 2;
+}
+
 .social {
+    grid-column: span 2;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
     gap: 47px;
+}
+
+.copyright {
+    grid-column: span 2;
 }
 
 /* --- Map section --- */
@@ -73,4 +165,68 @@ footer > * {
     right: 0;
     overflow:hidden;
     background:none !important;
+}
+
+/* --- Respo --- */
+
+@media (min-width: 900px) {
+    .social, .address {
+        grid-column: auto;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+    }
+
+    .nav-btn label:hover {
+        cursor: pointer;
+    }
+
+    .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 74px;
+        left: 0;
+        padding: 0;
+    }
+    .nav-links > a {
+        display: flex;
+        width: 100%;
+    }
+    #nav-check:not(:checked) ~ .nav-links {
+        height: 0;
+    }
+    #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 74px);
+        overflow-y: auto;
+    }
 }
