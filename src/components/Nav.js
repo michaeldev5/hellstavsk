@@ -17,7 +17,6 @@ const Nav = ({ navigation }) => (
         >
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
-
         <Popover>
           {({ open }) => (
             <>
