@@ -2,20 +2,15 @@ import React from "react"
 import house1 from "../images/house1.png"
 import house2 from "../images/house2.png"
 import house3 from "../images/house3.png"
+import SectionHeader from "./SectionHeader"
 
 const Gallery = () => (
   <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-col text-center w-full mb-18">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-          Posledné projekty
-        </h1>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them man bun deep jianbing selfies heirloom.
-        </p>
-      </div>
+      <SectionHeader
+        title="Posledné projekty"
+        description="Proin risus erat, volutpat hendrerit nibh vel, finibus venenatis urna. Integer vulputate turpis sed mauris euismod vestibulum. Etiam lacinia eleifend ante nec eleifend. Sed id arcu ac eros consectetur maximus. Nam hendrerit turpis nec convallis scelerisque."
+      />
       <div className="flex flex-wrap -m-4">
         <div className="lg:w-1/3 sm:w-1/2 p-4">
           <div className="flex relative">

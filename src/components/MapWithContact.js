@@ -28,7 +28,7 @@ const MapWithContact = () => (
             Meno
           </label>
           <input
-            type="email"
+            type="text"
             id="email"
             name="email"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -39,7 +39,7 @@ const MapWithContact = () => (
             Telefónne číslo
           </label>
           <input
-            type="email"
+            type="tel"
             id="email"
             name="email"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -61,7 +61,7 @@ const MapWithContact = () => (
             Služba
           </label>
           <input
-            type="email"
+            type="text"
             id="email"
             name="email"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
