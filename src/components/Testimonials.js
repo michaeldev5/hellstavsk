@@ -6,7 +6,7 @@ import customer3 from "../assets/customer3.png"
 import SectionHeader from "./SectionHeader"
 
 const Testimonials = () => (
-  <div className="px-4">
+  <div className="px-4" id="recenzie">
     <SectionHeader
       title="Zákazníci"
       description="Proin risus erat, volutpat hendrerit nibh vel, finibus venenatis urna. Integer vulputate turpis sed mauris euismod vestibulum. Etiam lacinia eleifend ante nec eleifend. Sed id arcu ac eros consectetur maximus. Nam hendrerit turpis nec convallis scelerisque."

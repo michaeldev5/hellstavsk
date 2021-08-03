@@ -51,7 +51,7 @@ const Nav = ({ navigation }) => (
                       </a>
                     ))}
                     <a
-                      href="#"
+                      href="#kontakt"
                       className="font-medium text-primary1 hover:text-primary1hover"
                     >
                       Ozvite sa nám!
@@ -99,7 +99,7 @@ const Nav = ({ navigation }) => (
                       ))}
                     </div>
                     <a
-                      href="#"
+                      href="#kontakt"
                       className="block w-full px-5 py-3 text-center font-medium text-primary1 bg-gray-50 hover:bg-gray-100"
                     >
                       Ozvite sa nám!
@@ -111,7 +111,10 @@ const Nav = ({ navigation }) => (
           )}
         </Popover>
 
-        <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <main
+          className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          id="o-nas"
+        >
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">

@@ -1,7 +1,7 @@
 import React from "react"
 
 const MapWithContact = () => (
-  <section className="text-gray-600 body-font relative">
+  <section className="text-gray-600 body-font relative" id="kontakt">
     <div className="absolute inset-0 bg-gray-300">
       <iframe
         style={{ filter: "grayscale(1) opacity(1)" }}

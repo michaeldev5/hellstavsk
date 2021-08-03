@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader"
 import Button from "./Button"
 
 const Download = () => (
-  <div className="text-center mb-12 v">
+  <div className="text-center mb-12 v" id="sluzby">
     <SectionHeader
       title="Služby"
       description="Presnejšie informácie o nami ponúkaných službách nájdete v našom CENNÍKU ktorý si môžete stiahnuť v PDF súbore, alebo požiadať o  aktuálnu cenovú ponuku cez náš kontaktný formulár."

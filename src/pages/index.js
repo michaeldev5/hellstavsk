@@ -8,10 +8,10 @@ import { Team } from "../components/Team"
 import Testimonials from "../components/Testimonials"
 
 const navigation = [
-  { name: "O nás", href: "#" },
-  { name: "Projekty", href: "#" },
-  { name: "Služby", href: "#" },
-  { name: "Recenzie", href: "#" },
+  { name: "O nás", href: "#o-nas" },
+  { name: "Projekty", href: "#projekty" },
+  { name: "Služby", href: "#sluzby" },
+  { name: "Recenzie", href: "#recenzie" },
 ]
 
 const IndexPage = () => (

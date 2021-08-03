@@ -5,7 +5,7 @@ import house3 from "../images/house3.png"
 import SectionHeader from "./SectionHeader"
 
 const Gallery = () => (
-  <section className="text-gray-600 body-font">
+  <section className="text-gray-600 body-font" id="projekty">
     <div className="container px-5 py-24 mx-auto">
       <SectionHeader
         title="Posledné projekty"
