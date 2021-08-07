@@ -1,23 +1,17 @@
 import * as React from "react"
 import Download from "../components/Download"
 import Footer from "../components/Footer"
-import Gallery from "../components/Gallery"
+import Projects from "../components/Projects"
 import MapWithContact from "../components/MapWithContact"
 import Nav from "../components/Nav"
 import { Team } from "../components/Team"
 import Testimonials from "../components/Testimonials"
-
-const navigation = [
-  { name: "O nás", href: "#o-nas" },
-  { name: "Projekty", href: "#projekty" },
-  { name: "Služby", href: "#sluzby" },
-  { name: "Recenzie", href: "#recenzie" },
-]
+import navigation from "../navigation"
 
 const IndexPage = () => (
   <>
-    <Nav navigation={navigation} />
-    <Gallery />
+    <Nav navigation={navigation} showHero />
+    <Projects />
     <Team />
     <Testimonials />
     <Download />

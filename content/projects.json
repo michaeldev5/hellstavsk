@@ -1,0 +1,40 @@
+{
+  "imagesPath": "projects",
+  "all": [
+    {
+      "name": "Zlaté",
+      "slug": "zlate",
+      "subtitle": "Rodinný dom",
+      "desc": "Popis",
+      "mainImg": "223618296_190153399817693_204338195645078164_n.jpg"
+    },
+    {
+      "name": "Richvald",
+      "slug": "richvald",
+      "subtitle": "Rodinný dom s podkrovím",
+      "desc": "Popis",
+      "mainImg": "163959781_114207224078978_4437374694975552787_n.jpg"
+    },
+    {
+      "name": "Heppenheim",
+      "slug": "heppenheim",
+      "subtitle": "Omietnutie garáže",
+      "desc": "Popis",
+      "mainImg": "162851170_112119430954424_2916438085009721247_n.jpg"
+    },
+    {
+      "name": "Hažlín",
+      "slug": "hazlin",
+      "subtitle": "Rodinný dvojpodlažný dom",
+      "desc": "Popis",
+      "mainImg": "204742678_168102495356117_878847590822391002_n.jpg"
+    },
+    {
+      "name": "Fribourg",
+      "slug": "fribourg",
+      "subtitle": "Historické podkrovné izby",
+      "desc": "Popis",
+      "mainImg": "163228716_112134524286248_7920305672881172395_n.jpg"
+    }
+  ]
+}

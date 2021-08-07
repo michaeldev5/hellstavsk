@@ -7,10 +7,18 @@ module.exports = {
         primary1: "#f6871f",
         primary1hover: "#f6aa62",
       },
+      flex: {
+        "1/4": "25%",
+        "1/2": "50%",
+      },
+      maxWidth: {
+        "1/4": "25%",
+        "1/2": "50%",
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }
