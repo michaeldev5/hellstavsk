@@ -1,14 +1,7 @@
 import React from "react"
-import zlate from "../images/gallery/zlate.jpg"
-import richvald from "../images/gallery/richvald.jpg"
-import heppenheim from "../images/gallery/heppenheim.jpg"
-import hazlin from "../images/gallery/hazlin.jpg"
-import fribourg from "../images/gallery/fribourg.jpg"
 import ProjectItem from "./ProjectItem"
 import SectionHeader from "./SectionHeader"
 import projects from "../../content/projects.json"
-
-console.log(projects.all)
 
 const Projects = () => (
   <section className="text-gray-600 body-font" id="projekty">
