@@ -6,7 +6,7 @@ const projectTemplate = path.resolve(`src/templates/project.js`)
 
 const projects = JSON.parse(fs.readFileSync("./content/projects.json"))
 
-const PUBLIC_PATH = "public"
+const PUBLIC_PATH = "static"
 
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions
