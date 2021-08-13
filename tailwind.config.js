@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary1: "#f6871f",
         primary1hover: "#f6aa62",
+        primary1light: "#fde4cd",
       },
       flex: {
         "1/4": "25%",

@@ -7,10 +7,12 @@ import Nav from "../components/Nav"
 import { Team } from "../components/Team"
 import Testimonials from "../components/Testimonials"
 import navigation from "../navigation"
+import Features from "../components/Features/Features"
 
 const IndexPage = () => (
   <>
     <Nav navigation={navigation} showHero />
+    <Features />
     <Projects />
     <Team />
     <Testimonials />
