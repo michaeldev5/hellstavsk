@@ -1,6 +1,11 @@
 import React from "react"
 import { SocialIcon } from "react-social-icons"
 import HellstavLogo from "./HellstavLogo"
+import { TNavigation } from "../types/TCommon"
+
+type Props = {
+  navigation: TNavigation
+}
 
 const Footer = ({ navigation }) => (
   <div className="pt-12">

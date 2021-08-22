@@ -1,6 +1,12 @@
 import React from "react"
+import { FC } from "react"
 
-const SectionHeader = ({ title, description }) => (
+type Props = {
+  title: string
+  description: string
+}
+
+const SectionHeader: FC<Props> = ({ title, description }) => (
   <div className="flex flex-col text-center w-full mb-18 px-4">
     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
       {title}

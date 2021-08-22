@@ -1,6 +1,14 @@
 import React from "react"
+import { FC } from "react"
 
-const TeamMember = ({ name, desc, phone, imageSrc }) => (
+type Props = {
+  name: string
+  desc: string
+  phone: string
+  imageSrc: string
+}
+
+const TeamMember: FC<Props> = ({ name, desc, phone, imageSrc }) => (
   <div className="grid sm:grid-cols-3">
     <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
       <img

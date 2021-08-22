@@ -1,6 +1,13 @@
 import React from "react"
+import { FC } from "react"
+import { TProject } from "../types/TProject"
 
-const ProjectItem = ({
+type Props = {
+  project: TProject
+  imagesPath: string
+}
+
+const ProjectItem: FC<Props> = ({
   project: { name, slug, subtitle, desc, mainImg },
   imagesPath,
 }) => (

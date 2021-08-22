@@ -1,10 +1,16 @@
-import React, { Fragment } from "react"
+import React, { FC, Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import heroImg from "../images/hero.png"
 import HellstavLogo from "./HellstavLogo"
+import { TNavigation } from "../types/TCommon"
 
-const Nav = ({ navigation, showHero }) => (
+type Props = {
+  navigation: TNavigation
+  showHero: boolean
+}
+
+const Nav: FC<Props> = ({ navigation, showHero = false }) => (
   <div className="relative bg-white">
     <div className="max-w-7xl mx-auto">
       <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">

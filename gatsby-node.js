@@ -2,7 +2,7 @@
 const path = require("path")
 const fs = require("fs")
 
-const projectTemplate = path.resolve(`src/templates/project.js`)
+const projectTemplate = path.resolve(`src/templates/project.tsx`)
 
 const projects = JSON.parse(fs.readFileSync("./content/projects.json"))
 
