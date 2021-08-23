@@ -20,10 +20,10 @@ const MapWithContact = () => (
         <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
           KONTAKTNÝ FORMULÁR
         </h2>
-        <p className="leading-relaxed mb-5 text-gray-600">
+        <p className="leading-relaxed mb-4 text-gray-600">
           V prípade akýchkoľvek otázok nás neváhajte kontaktovať
         </p>
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <label htmlFor="email" className="leading-7 text-sm text-gray-600">
             Meno
           </label>
@@ -31,10 +31,10 @@ const MapWithContact = () => (
             type="text"
             id="name"
             name="name"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <label htmlFor="email" className="leading-7 text-sm text-gray-600">
             Telefónne číslo
           </label>
@@ -42,10 +42,10 @@ const MapWithContact = () => (
             type="tel"
             id="phone"
             name="phone"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <label htmlFor="email" className="leading-7 text-sm text-gray-600">
             Email
           </label>
@@ -53,10 +53,10 @@ const MapWithContact = () => (
             type="email"
             id="email"
             name="email"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <label htmlFor="email" className="leading-7 text-sm text-gray-600">
             Služba
           </label>
@@ -64,21 +64,21 @@ const MapWithContact = () => (
             type="text"
             id="service"
             name="service"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <label htmlFor="message" className="leading-7 text-sm text-gray-600">
             Správa
           </label>
           <textarea
             id="message"
             name="message"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover h-32 text-sm outline-none text-gray-700 px-3 py-1 resize-none leading-6 transition-colors duration-200 ease-in-out"
             defaultValue={""}
           />
         </div>
-        <button className="text-white bg-primary1 border-0 py-2 px-6 focus:outline-none hover:bg-primary1hover rounded text-lg">
+        <button className="text-white bg-primary1 border-0 py-2 px-6 focus:outline-none hover:bg-primary1hover rounded text-base">
           Odoslať
         </button>
       </div>
