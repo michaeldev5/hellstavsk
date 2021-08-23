@@ -29,8 +29,8 @@ const MapWithContact = () => (
           </label>
           <input
             type="text"
-            id="email"
-            name="email"
+            id="name"
+            name="name"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
@@ -40,8 +40,8 @@ const MapWithContact = () => (
           </label>
           <input
             type="tel"
-            id="email"
-            name="email"
+            id="phone"
+            name="phone"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
@@ -62,8 +62,8 @@ const MapWithContact = () => (
           </label>
           <input
             type="text"
-            id="email"
-            name="email"
+            id="service"
+            name="service"
             className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>

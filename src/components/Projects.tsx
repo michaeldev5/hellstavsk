@@ -12,7 +12,11 @@ const Projects = () => (
       />
       <div className="flex flex-wrap -m-4">
         {projects.all.map(project => (
-          <ProjectItem project={project} imagesPath={projects.imagesPath} />
+          <ProjectItem
+            key={project.name}
+            project={project}
+            imagesPath={projects.imagesPath}
+          />
         ))}
       </div>
     </div>

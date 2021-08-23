@@ -17,11 +17,12 @@ const Footer = ({ navigation }) => (
               <div className="w-full lg:w-1/2 px-6">
                 <ul>
                   {navigation.map(link => (
-                    <li>
-                      <a href={link.href}>
-                        <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
-                          {link.name}
-                        </a>
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                      >
+                        {link.name}
                       </a>
                     </li>
                   ))}
@@ -30,13 +31,14 @@ const Footer = ({ navigation }) => (
               <div className="w-full lg:w-1/2 px-6">
                 <ul>
                   <li>
-                    <a href="javascript:void(0)">
-                      <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
-                        Kontaktujte nás od <br />
-                        Po - Pi
-                        <br />
-                        8:00 - 20:00
-                      </a>
+                    <a
+                      href="#"
+                      className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                    >
+                      Kontaktujte nás od <br />
+                      Po - Pi
+                      <br />
+                      8:00 - 20:00
                     </a>
                   </li>
                 </ul>
@@ -47,17 +49,18 @@ const Footer = ({ navigation }) => (
                 <ul>
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                     >
                       Zásady ochrany osobných údajov
                     </a>
                   </li>
                   <li className="mt-6">
-                    <a href="javascript:void(0)">
-                      <a className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">
-                        Podmienky služby
-                      </a>
+                    <a
+                      href="#"
+                      className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                    >
+                      Podmienky služby
                     </a>
                   </li>
                 </ul>
