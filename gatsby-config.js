@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Hellstav - Moderné kreatívne riešenia`,
     description: `Ponúkame kvalitné murárske práce a stavebnú činnosť so zodpovedným prístupom. Spoločnosť Hellstav, s.r.o. bola založená 16. mája 2020. Od začiatku svojho vzniku sa venuje murárskym prácam a stavebnej činnosti či už v exteriéri, alebo interiéri. Ponúka však nie len to. S využitím kvalitných materiálov Vám poskytne služby ktoré budú nie len estetické, ale aj odolné voči zubu času.`,
-    author: `@gatsbyjs`,
+    author: `@hellstav`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/assets/icon.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
