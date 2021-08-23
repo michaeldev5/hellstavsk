@@ -4,6 +4,17 @@
   "description": "Official Hellstav website",
   "version": "0.1.0",
   "author": "Rikkard29",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "fmt": "prettier --list-different \"src/**/*.{ts,tsx}\"",
+    "fmt:fix": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
@@ -32,20 +43,11 @@
     "gatsby-plugin-postcss": "^4.5.0",
     "postcss": "^8.3.0",
     "prettier": "^2.3.2",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.3.5"
   },
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "tsc": "tsc",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }
+  "license": "0BSD"
 }

@@ -36,7 +36,7 @@ const Footer: FC<Props> = ({ navigation }) => (
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                     >
                       Kontaktujte nás od <br />
@@ -53,7 +53,7 @@ const Footer: FC<Props> = ({ navigation }) => (
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                     >
                       Zásady ochrany osobných údajov
@@ -61,7 +61,7 @@ const Footer: FC<Props> = ({ navigation }) => (
                   </li>
                   <li className="mt-6">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
                     >
                       Podmienky služby
