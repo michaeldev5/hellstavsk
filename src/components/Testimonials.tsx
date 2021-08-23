@@ -9,7 +9,10 @@ const Testimonials = () => (
   <div className="px-4" id="recenzie">
     <SectionHeader
       title="Zákazníci"
-      description="Proin risus erat, volutpat hendrerit nibh vel, finibus venenatis urna. Integer vulputate turpis sed mauris euismod vestibulum. Etiam lacinia eleifend ante nec eleifend. Sed id arcu ac eros consectetur maximus. Nam hendrerit turpis nec convallis scelerisque."
+      description="Ak ste sa ešte stále nerozhodli
+      či si vyberiete nás, prečítajte si 
+      recenzie od našich spokojných 
+      zákazníkov a zákazníčok."
     />
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 py-8">
       <Testimonial
