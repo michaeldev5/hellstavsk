@@ -8,9 +8,11 @@ import Team from "../components/Team"
 import Testimonials from "../components/Testimonials"
 import navigation from "../navigation"
 import Features from "../components/Features/Features"
+import Seo from "../components/Seo"
 
 const IndexPage = () => (
   <>
+    <Seo />
     <Nav navigation={navigation} showHero />
     <Features />
     <Projects />

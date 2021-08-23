@@ -1011,6 +1011,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.14.8":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
+  integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.14.7":
   version "7.14.8"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.14.8.tgz#4fbb0be8161dbdb30e68d903595fb6479ecf9209"
@@ -1935,6 +1942,13 @@
   version "1.3.9"
   resolved "https://registry.yarnpkg.com/@types/reach__router/-/reach__router-1.3.9.tgz#d3aaac0072665c81063cc6c557c18dadd642b226"
   integrity sha512-N6rqQqTTAV/zKLfK3iq9Ww3wqCEhTZvsilhl0zI09zETdVq1QGmJH6+/xnj8AFUWIrle2Cqo+PGM/Ltr1vBb9w==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-helmet@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.2.tgz#e9d7d16b29e4ec5716711c52c35c3cec45819eac"
+  integrity sha512-dcfAZNlWb5JYFbO9CGfrPWLJAyFcT6UeR3u35eBbv8liY2Rg4K7fM1G5+HnwVgot+C+kVwXAZ8pLEn2jsMfTDg==
   dependencies:
     "@types/react" "*"
 
@@ -5922,11 +5936,11 @@ gatsby-plugin-postcss@^4.5.0:
     postcss-loader "^4.3.0"
 
 gatsby-plugin-react-helmet@^4.4.0:
-  version "4.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.10.0.tgz#b33f25dd7b2062cdf6040bb4249ab5a3aa2dd4e4"
-  integrity sha512-cmYU2Y0krb6L5Bgb4RoR/LW9ZJw946eDrvVOYk71hoSEjsvIIYkAwAI+kVziApdCGH9Is79y1qMrLKMAG+YKSw==
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.12.0.tgz#85272d332497cf51ef399b48f06b1d4c81f3e42a"
+  integrity sha512-vjVy+tEWGWgyTP7QnJEK2P++ctQ+mWBYGu92fSeHoEFhkxp7G0/v8E92YAPu0cKHEp7cwo4kEXo5++cWqj3QDQ==
   dependencies:
-    "@babel/runtime" "^7.14.6"
+    "@babel/runtime" "^7.14.8"
 
 gatsby-plugin-sharp@^3.4.1:
   version "3.10.2"

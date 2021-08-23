@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Hellstav - Moderné kreatívne riešenia`,
+    description: `Ponúkame kvalitné murárske práce a stavebnú činnosť so zodpovedným prístupom. Spoločnosť Hellstav, s.r.o. bola založená 16. mája 2020. Od začiatku svojho vzniku sa venuje murárskym prácam a stavebnej činnosti či už v exteriéri, alebo interiéri. Ponúka však nie len to. S využitím kvalitných materiálov Vám poskytne služby ktoré budú nie len estetické, ale aj odolné voči zubu času.`,
     author: `@gatsbyjs`,
   },
   plugins: [
