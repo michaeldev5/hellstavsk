@@ -1,13 +1,17 @@
-import React from "react"
+import React, { FC } from "react"
 import { SocialIcon } from "react-social-icons"
 import HellstavLogo from "./HellstavLogo"
 import { TNavigation } from "../types/TCommon"
+
+const FACEBOOK =
+  "https://www.facebook.com/pages/category/Construction-Company/HellStav-100723655427335/"
+const INSTAGRAM = "https://www.instagram.com/hellstavsro/"
 
 type Props = {
   navigation: TNavigation
 }
 
-const Footer = ({ navigation }) => (
+const Footer: FC<Props> = ({ navigation }) => (
   <div className="pt-12">
     <footer id="footer" className="relative z-50 dark:bg-gray-900 pt-24">
       <div className=" border-t border-b border-gray-200 dark:border-gray-700 py-16">
@@ -67,8 +71,18 @@ const Footer = ({ navigation }) => (
               </div>
               <div className="w-full lg:w-1/2 px-6 flex flex-col justify-between">
                 <div className="flex items-center mb-6 space-x-2">
-                  <SocialIcon network="facebook" url="#" bgColor="#f6871f" />
-                  <SocialIcon network="instagram" url="#" bgColor="#f6871f" />
+                  <SocialIcon
+                    network="facebook"
+                    url={FACEBOOK}
+                    bgColor="#f6871f"
+                    target="_blank"
+                  />
+                  <SocialIcon
+                    network="instagram"
+                    url={INSTAGRAM}
+                    bgColor="#f6871f"
+                    target="_blank"
+                  />
                 </div>
               </div>
             </div>
