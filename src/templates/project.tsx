@@ -1,10 +1,18 @@
-import React from "react"
+import React, { FC } from "react"
 import Nav from "../components/Nav"
 import navigation from "../navigation"
 import Footer from "../components/Footer"
 import Carousel from "../components/Carousel"
+import { TProject } from "../types/TProject"
 
-const ProjectPage = ({
+type Props = {
+  pageContext: {
+    images: string[]
+    project: TProject
+  }
+}
+
+const ProjectPage: FC<Props> = ({
   pageContext: {
     images,
     project: { name, subtitle, desc },

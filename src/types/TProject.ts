@@ -5,3 +5,5 @@ export type TProject = {
   desc: string
   mainImg: string
 }
+
+export type TProjects = TProject[]

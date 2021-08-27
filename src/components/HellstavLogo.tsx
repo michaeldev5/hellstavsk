@@ -1,6 +1,8 @@
-import React from "react"
+import React, { FC, SVGProps } from "react"
 
-const HellstavLogo = props => (
+type Props = SVGProps<SVGSVGElement>
+
+const HellstavLogo: FC<Props> = props => (
   <svg
     id="prefix__Layer_1"
     data-name="Layer 1"

@@ -7,7 +7,7 @@ import { TNavigation } from "../types/TCommon"
 
 type Props = {
   navigation: TNavigation
-  showHero: boolean
+  showHero?: boolean
 }
 
 const Nav: FC<Props> = ({ navigation, showHero = false }) => (
