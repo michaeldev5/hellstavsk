@@ -3,7 +3,7 @@ import { FC } from "react"
 
 type Props = {
   title: string
-  description?: string
+  description: string
 }
 
 const SectionHeader: FC<Props> = ({ title, description }) => (
