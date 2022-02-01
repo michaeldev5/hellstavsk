@@ -12,7 +12,7 @@ import Seo from "../components/Seo"
 const IndexPage = () => (
   <>
     <Seo />
-    <Nav navigation={navigation} showHero />
+    <Nav navigation={navigation} />
     <Features />
     <Projects />
     <Testimonials />

@@ -19,18 +19,18 @@ const Testimonial: FC<Props> = ({ name, content, imageSrc }) => (
         </a>
       </div>
       <div className="w-full mb-10">
-        <div className="text-3xl text-primary1 text-left leading-tight h-3">
+        <div className="text-3xl text-orange-400 text-left leading-tight h-3">
           “
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-100 text-center px-5 m-0">
           {content}
         </p>
-        <div className="text-3xl text-primary1 text-right leading-tight h-3">
+        <div className="text-3xl text-orange-400 text-right leading-tight h-3">
           ”
         </div>
       </div>
       <div className="w-full">
-        <p className="text-md text-primary1 font-bold text-center m-0">
+        <p className="text-md text-orange-400 font-bold text-center m-0">
           {name}
         </p>
       </div>

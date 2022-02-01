@@ -9,8 +9,9 @@ type Props = {
 const Button: FC<Props> = ({ label, Icon, href }) => (
   <a
     href={href}
-    className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center hover:cursor-pointer"
+    className="bg-orange-400 hover:bg-orange-300 text-white font-bold py-2 px-4 rounded inline-flex items-center hover:cursor-pointer"
     target="_blank"
+    rel="noreferrer"
   >
     {Icon}
     <span>{label}</span>

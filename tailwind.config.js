@@ -1,12 +1,9 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        primary1: "#f6871f",
-        primary1hover: "#f6aa62",
-        primary1light: "#fde4cd",
+      fontFamily: {
+        sans: ["'Open Sans'", "sans-serif"],
       },
       flex: {
         "1/4": "25%",
@@ -18,8 +15,4 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require("@tailwindcss/typography")],
 }

@@ -31,7 +31,7 @@ const MapWithContact = () => (
             type="text"
             id="name"
             name="name"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div className="relative mb-3">
@@ -42,7 +42,7 @@ const MapWithContact = () => (
             type="tel"
             id="phone"
             name="phone"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div className="relative mb-3">
@@ -53,7 +53,7 @@ const MapWithContact = () => (
             type="email"
             id="email"
             name="email"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div className="relative mb-3">
@@ -64,7 +64,7 @@ const MapWithContact = () => (
             type="text"
             id="service"
             name="service"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div className="relative mb-3">
@@ -74,11 +74,11 @@ const MapWithContact = () => (
           <textarea
             id="message"
             name="message"
-            className="w-full bg-white rounded border border-gray-300 focus:border-primary1hover focus:ring-2 focus:ring-primary1hover h-32 text-sm outline-none text-gray-700 px-3 py-1 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            className="w-full bg-white rounded border border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 h-32 text-sm outline-none text-gray-700 px-3 py-1 resize-none leading-6 transition-colors duration-200 ease-in-out"
             defaultValue={""}
           />
         </div>
-        <button className="text-white bg-primary1 border-0 py-2 px-6 focus:outline-none hover:bg-primary1hover rounded text-base">
+        <button className="text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-300 rounded text-base transition-colors">
           Odoslať
         </button>
       </div>

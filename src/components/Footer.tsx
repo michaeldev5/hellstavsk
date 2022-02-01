@@ -74,13 +74,13 @@ const Footer: FC<Props> = ({ navigation }) => (
                   <SocialIcon
                     network="facebook"
                     url={FACEBOOK}
-                    bgColor="#f6871f"
+                    bgColor="#fb923c"
                     target="_blank"
                   />
                   <SocialIcon
                     network="instagram"
                     url={INSTAGRAM}
-                    bgColor="#f6871f"
+                    bgColor="#fb923c"
                     target="_blank"
                   />
                 </div>
@@ -92,7 +92,7 @@ const Footer: FC<Props> = ({ navigation }) => (
       <div className="py-16 flex flex-col justify-center items-center">
         <HellstavLogo width={200} />
         <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-          2021 Hellstav. Všetky práva vyhradené.
+          2022 Hellstav. Všetky práva vyhradené.
         </p>
       </div>
     </footer>
