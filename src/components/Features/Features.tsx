@@ -1,21 +1,18 @@
 import React from "react"
+import SectionHeader from "../SectionHeader"
 import FeatureItem from "./FeatureItem"
 
 const Features = () => (
   <section className="text-gray-600 body-font">
     <div className="container px-5 pt-24 mx-auto">
-      <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-          O nás
-        </h1>
-        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-          Spoločnosť Hellstav, s.r.o. bola založená 16. mája 2020. Od začiatku
+      <SectionHeader
+        title="O nás"
+        description="Spoločnosť Hellstav, s.r.o. bola založená 16. mája 2020. Od začiatku
           svojho vzniku sa venuje murárskym prácam a stavebnej činnosti či už v
           exteriéri, alebo interiéri. Ponúka však nie len to. S využitím
           kvalitných materiálov Vám poskytne služby ktoré budú nie len
-          estetické, ale aj odolné voči zubu času.
-        </p>
-      </div>
+          estetické, ale aj odolné voči zubu času."
+      />
       <div className="flex flex-wrap -m-4">
         <FeatureItem
           title="Kvalita"
