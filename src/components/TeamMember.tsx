@@ -10,9 +10,9 @@ type Props = {
 
 const TeamMember: FC<Props> = ({ name, desc, phone, imageSrc }) => (
   <div className="grid sm:grid-cols-3">
-    <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+    <div className="relative w-full h-48 max-h-full shadow sm:h-auto">
       <img
-        className="absolute object-cover w-full h-full rounded"
+        className="absolute object-cover w-full h-full"
         src={imageSrc}
         alt={name.toString()}
       />

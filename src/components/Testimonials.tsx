@@ -3,17 +3,17 @@ import Testimonial from "./Testimonial"
 import customer1 from "../assets/customer1.png"
 import customer2 from "../assets/customer2.png"
 import customer3 from "../assets/customer3.png"
-import SectionHeader from "./SectionHeader"
+import Section from "./Section"
 
 const Testimonials = () => (
-  <div className="px-4" id="recenzie">
-    <SectionHeader
-      title="Zákazníci"
-      description="Ak ste sa ešte stále nerozhodli
-      či si vyberiete nás, prečítajte si 
-      recenzie od našich spokojných 
-      zákazníkov a zákazníčok."
-    />
+  <Section
+    title="Zákazníci"
+    description="Ak ste sa ešte stále nerozhodli
+  či si vyberiete nás, prečítajte si 
+  recenzie od našich spokojných 
+  zákazníkov a zákazníčok."
+    id="recenzie"
+  >
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 py-8">
       <Testimonial
         name="Jozef Novák, Prešov"
@@ -31,7 +31,7 @@ const Testimonials = () => (
         imageSrc={customer3}
       />
     </div>
-  </div>
+  </Section>
 )
 
 export default Testimonials

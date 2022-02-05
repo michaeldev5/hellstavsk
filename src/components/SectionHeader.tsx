@@ -7,12 +7,12 @@ type Props = {
 }
 
 const SectionHeader: FC<Props> = ({ title, description }) => (
-  <div className="flex flex-col text-center w-full mb-18 px-4">
-    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+  <div className="flex flex-col w-full">
+    <h1 className="text-slate-900 text-2xl sm:text-4xl font-bold title-font">
       {title}
     </h1>
     {description && (
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">
+      <p className="text-slate-700 max-w-3xl text-base sm:text-lg my-4 sm:my-6">
         {description}
       </p>
     )}

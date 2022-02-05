@@ -22,13 +22,21 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fb923c`,
+        theme_color: `#fb923c`,
         display: `minimal-ui`,
         icon: `src/assets/icon.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
+    },
   ],
 }

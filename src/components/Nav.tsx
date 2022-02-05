@@ -8,8 +8,8 @@ type Props = {
 }
 
 const Nav: FC<Props> = ({ navigation }) => (
-  <div className="relative">
-    <div className="max-w-7xl mx-auto">
+  <div className="relative mb-8">
+    <div className="container mx-auto">
       <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-white">
         <svg
           className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
@@ -26,7 +26,7 @@ const Nav: FC<Props> = ({ navigation }) => (
           id="o-nas"
         >
           <div className="sm:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">
                 Moderné
                 <br />
@@ -35,15 +35,15 @@ const Nav: FC<Props> = ({ navigation }) => (
                 kreatívne riešenia
               </span>
             </h1>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p className="mt-3 text-base text-slate-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Ponúkame kvalitné murárske práce a stavebnú činnosť so zodpovedným
               prístupom.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
+              <div className="shadow">
                 <a
                   href="#projekty"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-400 hover:bg-orange-300 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-white bg-orange-400 hover:bg-orange-300 md:py-4 md:text-lg md:px-10"
                 >
                   Naše projekty
                 </a>

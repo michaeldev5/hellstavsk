@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["'Open Sans'", "sans-serif"],
+        sans: ["'Barlow'", "sans-serif"],
       },
       flex: {
         "1/4": "25%",

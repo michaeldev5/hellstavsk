@@ -3,20 +3,22 @@ import Download from "../components/Download"
 import Footer from "../components/Footer"
 import Projects from "../components/Projects"
 import MapWithContact from "../components/MapWithContact"
-import Nav from "../components/Nav"
 import Testimonials from "../components/Testimonials"
 import navigation from "../navigation"
 import Features from "../components/Features/Features"
 import Seo from "../components/Seo"
+import Nav2 from "../components/Nav2"
+import Hero from "../components/Hero"
 
 const IndexPage = () => (
   <>
     <Seo />
-    <Nav navigation={navigation} />
+    <Nav2 navigation={navigation} />
+    <Hero />
     <Features />
     <Projects />
-    <Testimonials />
     <Download />
+    <Testimonials />
     <MapWithContact />
     <Footer navigation={navigation} />
   </>

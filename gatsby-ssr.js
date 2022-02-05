@@ -1,5 +1,5 @@
 exports.onRenderBody = ({ setBodyAttributes }) => {
   setBodyAttributes({
-    className: "bg-white text-gray-900",
+    className: "bg-gray-50 text-gray-900",
   })
 }
