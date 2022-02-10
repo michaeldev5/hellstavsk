@@ -14,7 +14,7 @@ const Testimonials = () => (
   zákazníkov a zákazníčok."
     id="recenzie"
   >
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 py-8">
+    <div className="grid grid-cols-1 gap-16 md:gap-7 sm:grid-cols-2 md:grid-cols-3 pt-10">
       <Testimonial
         name="Jozef Novák, Prešov"
         content="S vykonanou prácou som bol veľmi spokojný, určite by som si Hellstav vybral znovu"

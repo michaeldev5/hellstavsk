@@ -9,6 +9,7 @@ import Features from "../components/Features/Features"
 import Seo from "../components/Seo"
 import Nav2 from "../components/Nav2"
 import Hero from "../components/Hero"
+import Team from "../components/Team"
 
 const IndexPage = () => (
   <>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Projects />
     <Download />
     <Testimonials />
+    <Team />
     <MapWithContact />
     <Footer navigation={navigation} />
   </>

@@ -7,8 +7,8 @@ type Props = {
 }
 
 const Testimonial: FC<Props> = ({ name, content, imageSrc }) => (
-  <div className="flex justify-center sm:px-5 py-5">
-    <div className="w-full mx-auto max-w-xl bg-white hover:shadow-lg transition-all rounded-md p-6 text-slate-700">
+  <div className="flex justify-center">
+    <div className="flex flex-col w-full mx-auto max-w-xl bg-white hover:shadow-lg transition-all rounded-md p-6 text-slate-700">
       <div className="w-full pt-1 text-center pb-5 -mt-16 mx-auto">
         <a href="/#" className="block relative">
           <img
@@ -27,7 +27,7 @@ const Testimonial: FC<Props> = ({ name, content, imageSrc }) => (
           ”
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full flex flex-1 items-end justify-center">
         <p className="text-sm text-slate-700 font-semibold text-center m-0">
           {name}
         </p>
