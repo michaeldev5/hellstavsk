@@ -17,7 +17,6 @@ const ContactForm = () => {
     })
       .then(() => setIsOpen(true))
       .catch(error => alert(error))
-    setIsOpen(true)
   }
 
   const onRequestClose = () => {
@@ -36,6 +35,7 @@ const ContactForm = () => {
           onSubmit={onSubmit}
           className="lg:w-1/3 md:w-1/2 bg-white p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md rounded-md"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <h2 className="text-slate-900 text-lg mb-1 font-medium title-font">
             KONTAKTNÝ FORMULÁR
           </h2>
