@@ -12,7 +12,7 @@ type Props = {
 }
 
 const Footer: FC<Props> = ({ navigation }) => (
-  <footer id="footer" className="relative z-50 pt-24">
+  <footer id="footer" className="relative pt-24">
     <div className="border-t border-b border-slate-200 py-12 sm:py-16">
       <div className="mx-auto container px-8 py-4">
         <div className="lg:flex">
