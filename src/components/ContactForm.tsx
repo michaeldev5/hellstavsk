@@ -6,9 +6,17 @@ const ContactForm = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const onSubmit = (e: FormEvent) => {
-    console.log("submited")
     e.preventDefault()
     if (formRef.current) formRef.current.reset()
+    if (!formRef.current) return
+    const formData = new FormData(formRef.current)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    })
+      .then(() => setIsOpen(true))
+      .catch(error => alert(error))
     setIsOpen(true)
   }
 
