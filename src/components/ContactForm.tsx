@@ -1,15 +1,14 @@
-import React, { FormEvent, useRef, useState } from "react"
+import React, { FormEvent, useState } from "react"
 import ContactFormDialog from "./ContactFormDialog"
 
 const ContactForm = () => {
-  const formRef = useRef<HTMLFormElement>(null)
   const [isOpen, setIsOpen] = useState(false)
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault()
-    if (formRef.current) formRef.current.reset()
-    if (!formRef.current) return
-    const formData = new FormData(formRef.current)
+    var form = document.querySelector<HTMLFormElement>("form.contact")
+    if (!form) return
+    const formData = new FormData(form)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -28,12 +27,11 @@ const ContactForm = () => {
       <ContactFormDialog isOpen={isOpen} onRequestClose={onRequestClose} />
       <div className="container mx-auto px-8 py-14 flex">
         <form
-          ref={formRef}
           name="contact"
           method="POST"
           data-netlify="true"
           onSubmit={onSubmit}
-          className="lg:w-1/3 md:w-1/2 bg-white p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md rounded-md"
+          className="contact lg:w-1/3 md:w-1/2 bg-white p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md rounded-md"
         >
           <input type="hidden" name="form-name" value="contact" />
           <h2 className="text-slate-900 text-lg mb-1 font-medium title-font">
@@ -49,7 +47,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="name"
-              name="name"
+              name="Meno"
               required
               className="rounded-md w-full bg-white border border-slate-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
@@ -61,7 +59,7 @@ const ContactForm = () => {
             <input
               type="tel"
               id="phone"
-              name="phone"
+              name="Telefon"
               className="rounded-md w-full bg-white border border-slate-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -83,7 +81,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="service"
-              name="service"
+              name="sluzba"
               className="rounded-md w-full bg-white border border-slate-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -96,7 +94,7 @@ const ContactForm = () => {
             </label>
             <textarea
               id="message"
-              name="message"
+              name="sprava"
               className="rounded-md w-full bg-white border border-slate-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 h-32 text-sm outline-none text-gray-700 px-3 py-1 resize-none leading-6 transition-colors duration-200 ease-in-out"
               required
             />
