@@ -41,7 +41,7 @@ const ContactForm = () => {
             V prípade akýchkoľvek otázok nás neváhajte kontaktovať
           </p>
           <div className="relative mb-3">
-            <label htmlFor="email" className="leading-7 text-sm text-slate-700">
+            <label htmlFor="name" className="leading-7 text-sm text-slate-700">
               Meno
             </label>
             <input
@@ -53,7 +53,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="relative mb-3">
-            <label htmlFor="email" className="leading-7 text-sm text-slate-700">
+            <label htmlFor="phone" className="leading-7 text-sm text-slate-700">
               Telefónne číslo
             </label>
             <input
@@ -75,7 +75,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="relative mb-3">
-            <label htmlFor="email" className="leading-7 text-sm text-slate-700">
+            <label
+              htmlFor="service"
+              className="leading-7 text-sm text-slate-700"
+            >
               Služba
             </label>
             <input
