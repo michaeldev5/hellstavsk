@@ -7,9 +7,11 @@ type Props = {
 }
 
 const Nav2: FC<Props> = ({ navigation }) => (
-  <header className="py-8">
+  <header className="pt-8 pb-8 md:pb-14">
     <div className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-      <HellstavLogo className="w-32 relative bottom-3" />
+      <a href="/">
+        <HellstavLogo className="w-32 relative bottom-3" />
+      </a>
       <div className="hidden md:flex space-x-12 items-center">
         {navigation.map(({ href, name }, index) => (
           <a

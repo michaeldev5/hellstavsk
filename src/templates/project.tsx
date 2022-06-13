@@ -1,9 +1,10 @@
 import React, { FC } from "react"
-import Nav from "../components/Nav"
 import navigation from "../navigation"
 import Footer from "../components/Footer"
-import Carousel from "../components/Carousel"
 import { TProject } from "../types/TProject"
+import Nav2 from "../components/Nav2"
+import Project from "../components/Project"
+import "react-image-gallery/styles/css/image-gallery.css"
 
 type Props = {
   pageContext: {
@@ -12,21 +13,11 @@ type Props = {
   }
 }
 
-const ProjectPage: FC<Props> = ({
-  pageContext: {
-    images,
-    project: { name, subtitle, desc },
-  },
-}) => {
+const ProjectPage: FC<Props> = ({ pageContext: { images, project } }) => {
   return (
     <>
-      <Nav navigation={navigation} />
-      <div className="container mx-auto px-4">
-        <h1>{name}</h1>
-        <h3>{subtitle}</h3>
-        <p>{desc}</p>
-      </div>
-      <Carousel images={images} />
+      <Nav2 navigation={navigation} />
+      <Project project={project} images={images} />
       <Footer navigation={navigation} />
     </>
   )

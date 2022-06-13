@@ -32,6 +32,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-image-gallery": "^1.2.8",
     "react-responsive-carousel": "^3.2.22",
     "react-social-icons": "^5.8.0"
   },
@@ -43,6 +44,7 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@types/react-helmet": "^6.1.5",
+    "@types/react-image-gallery": "^1.0.5",
     "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.7.0",
