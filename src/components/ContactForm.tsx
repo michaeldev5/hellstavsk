@@ -14,7 +14,11 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as any).toString(),
     })
-      .then(() => setIsOpen(true))
+      .then(() => {
+        const form: any = e.target;
+        if (form) form.reset();
+        setIsOpen(true);
+      })
       .catch(error => alert(error))
   }
 
