@@ -13,7 +13,7 @@ const Team = () => (
         name="Stanislav Helmanovský"
         desc="Spolumajiteľ"
         phone="0907278857"
-        imageSrc="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+        imageSrc="https://www.pinpng.com/pngs/m/341-3415688_no-avatar-png-transparent-png.png"
       />
       <TeamMember
         name="Vladimír Helmanovský"
