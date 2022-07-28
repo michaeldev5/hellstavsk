@@ -24,7 +24,7 @@ const Nav2: FC<Props> = ({ navigation }) => (
           </a>
         ))}
         <a href="#kontakt">
-          <button className="px-6 py-2 bg-orange-400 hover:bg-orange-500 transition-colors rounded-md text-white font-semibold">
+          <button className="px-6 py-2 bg-orang hover:bg-orange-500 transition-colors rounded-md text-white font-semibold">
             Ozvite sa nám
           </button>
         </a>

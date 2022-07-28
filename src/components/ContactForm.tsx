@@ -102,7 +102,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <button className="text-white font-medium bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-300 rounded-md text-base transition-colors">
+          <button className="text-white font-medium bg-orang border-0 py-2 px-6 focus:outline-none hover:bg-orange-300 rounded-md text-base transition-colors">
             Odoslať
           </button>
         </form>

@@ -15,7 +15,7 @@ const Hero = () => (
         </h2>
         <a
           href="#posledne-projekty"
-          className="flex sm:inline-flex items-center justify-center px-8 py-3 rounded-md text-base font-medium text-white bg-orange-400 hover:bg-orange-300 md:py-4 md:text-lg md:px-10"
+          className="flex sm:inline-flex items-center justify-center px-8 py-3 rounded-md text-base font-medium text-white bg-orang hover:bg-orange-300 md:py-4 md:text-lg md:px-10"
         >
           Naše projekty
         </a>
