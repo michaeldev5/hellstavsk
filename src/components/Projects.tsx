@@ -6,7 +6,7 @@ import Section from "./Section"
 const Projects = () => (
   <Section
     title="Posledné projekty"
-    description="V poslednej dobe sme spolupracovali na viacerých projektoch. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet mi quis eros finibus tempus nec nec ligula. Nullam eget pellentesque mauris."
+    description="Naši odborníci vám okrem konzultácie predstavia aj konkrétny plán realizácie. Niektoré z našich projektov si môžete pozrieť priamo na tejto stránke."
     id="posledne-projekty"
   >
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
