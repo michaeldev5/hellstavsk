@@ -25,7 +25,7 @@ const Project: FC<Props> = ({ project: { subtitle, name, desc }, images }) => (
           thumbnail: image,
         }))}
         showPlayButton={false}
-        additionalClass="flex-1"
+        additionalClass="flex-1 overflow-hidden"
       />
     </div>
   </div>
