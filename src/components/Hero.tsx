@@ -14,7 +14,7 @@ const Hero = () => (
           prístupom.
         </h2>
         <a
-          href="#projekty"
+          href="#posledne-projekty"
           className="flex sm:inline-flex items-center justify-center px-8 py-3 rounded-md text-base font-medium text-white bg-orange-400 hover:bg-orange-300 md:py-4 md:text-lg md:px-10"
         >
           Naše projekty
