@@ -64,6 +64,7 @@ const ContactForm = () => {
               type="tel"
               id="phone"
               name="Telefon"
+              pattern="^(?:0|\(?\+421\)?\s?|00421\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
               className="rounded-md w-full bg-white border border-slate-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300 text-sm outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
