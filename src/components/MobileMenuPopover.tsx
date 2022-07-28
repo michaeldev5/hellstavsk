@@ -12,41 +12,31 @@ const MobileMenuPopover: FC<Props> = ({ navigation }) => (
   <Popover>
     {({ open }) => (
       <>
-        <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <div className="relative">
           <nav
             className="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="/">
-                  <span className="sr-only">Workflow</span>
-                  <HellstavLogo width={120} />
-                </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-white p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-300">
+                  <Popover.Button className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-300">
                     <span className="sr-only">Open main menu</span>
-                    <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                    <svg
+                      width="26"
+                      height="18"
+                      viewBox="0 0 26 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                        fill="black"
+                      ></path>
+                    </svg>
                   </Popover.Button>
                 </div>
               </div>
-            </div>
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              {navigation.map(item => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
-              ))}
-              <a
-                href="#kontakt"
-                className="font-medium text-orange-400 hover:text-orange-300"
-              >
-                Ozvite sa nám!
-              </a>
             </div>
           </nav>
         </div>
