@@ -23,7 +23,7 @@ const Team = () => (
       />
       <TeamMember
         name="Ján Helmanovský"
-        desc="Brigádnik"
+        desc="Spolumajiteľ"
         phone="0911846157"
         imageSrc="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
       />
