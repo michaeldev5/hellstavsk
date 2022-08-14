@@ -6,7 +6,7 @@ const Team = () => (
   <Section
     id="tim"
     title="Náš tím"
-    description="Hellstav s.r.o. pozostáva z troch bratov, ktorí sa stavebnej činnosti venujú už viac ako 20 rokov. Môžete sa spoľahnúť, že vám okrém dobrých rád splnia vaše vízie."
+    description="Hellstav s.r.o. je rodinná firma troch bratov, ktorí sa stavebnej činnosti venujú už viac ako 20 rokov. Môžete sa spoľahnúť, že Vám nielenže poskytnú dobré rady, ale taktiež splnia Vaše vízie."
   >
     <div className="grid gap-10 mx-auto lg:grid-cols-2">
       <TeamMember
